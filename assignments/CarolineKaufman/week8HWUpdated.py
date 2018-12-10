@@ -32,7 +32,7 @@ if menu == "1":
 
 #Converts the RNA sequence -->  amino acids. 
 	proteinSeq = ""
-	for i in range(0, len(rnaSeq), 3):
+	for i in range(0, len(rnaSeq), 3):	# DB: An additional comment or two here might be helpful
 		if rnaSeq[i:i+3] in Codon2AA:
 			proteinSeq += Codon2AA[rnaSeq[i:i+3]]
 	print ("Protein Sequence: "+proteinSeq)
@@ -45,6 +45,8 @@ else:
 	print(codon)
 
 #One random codon chosen from DNA sequence entered
-	import random
+	import random	# DB: Better to put this at the top of the script.
 	randomCodon = random.choice(codon)
 	print(randomCodon)
+
+# DB: Overall, very good! Just a couple minor comments (see above).
